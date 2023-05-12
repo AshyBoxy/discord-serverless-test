@@ -65,7 +65,7 @@ export default async function handler(req, res) {
             }
         }
 
-        console.log({ response, foo: "response bar" });
+        console.log({ response, headers: req.headers, foo: "response bar" });
         return res.json(response);
     } else {
         res.setHeader('Allow', 'POST');
