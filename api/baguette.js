@@ -1,4 +1,6 @@
 export default function handler(req, res) {
     console.log(req);
-    return res.status(204);
+    return res.json({
+        foo: "bar"
+    });
 }
