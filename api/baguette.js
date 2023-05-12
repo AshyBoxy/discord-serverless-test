@@ -13,7 +13,7 @@ export default async function handler(req, res) {
         await new Promise((res) => {
             const dataHandler = (d) => {
                 let ds = d?.toString();
-                console.log({ d, ds });
+                // console.log({ d, ds });
                 if (ds) data += ds;
             };
             req.on("data", dataHandler);
@@ -29,14 +29,22 @@ export default async function handler(req, res) {
 
         const signature = req.headers["X-Signature-Ed25519"];
         const timestamp = req.headers["X-Signature-Timestamp"];
-        if (!signature || !timestamp) return res.status(400).end("Missing signature information");
-
+        if (!signature || !timestamp) {
+            console.log("no signature");
+            return res.status(400).end("Missing signature information");
+        }
         if (!nacl.sign.detached.verify(
             Buffer.from(timestamp + data), Buffer.from(signature, "hex"), Buffer.from(process.env.PUBLIC_KEY, "hex")
-        )) return res.status(401).end("Invalid signature");
+        )) {
+            console.log("bad signature");
+            return res.status(401).end("Invalid signature");
+        }
 
 
-        if (!body.type) return res.status(400).end("Missing type on request");
+        if (!body.type) {
+            console.log("no type");
+            return res.status(400).end("Missing type on request");
+        }
 
         switch (body.type) {
             case 1:
