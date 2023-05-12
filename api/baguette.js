@@ -44,6 +44,7 @@ export default async function handler(req, res) {
 
         switch (body.type) {
             case 1:
+                console.log("Received ping");
                 response = { type: 1 };
                 verify = false; // don't need to verify for ping?
                 break;
@@ -64,7 +65,7 @@ export default async function handler(req, res) {
             }
         }
 
-        console.log({ response });
+        console.log({ response, foo: "response bar" });
         return res.json(response);
     } else {
         res.setHeader('Allow', 'POST');
