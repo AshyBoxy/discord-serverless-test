@@ -27,8 +27,8 @@ export default async function handler(req, res) {
         // res.json({ data });
         // console.log({ body: req.body, data });
 
-        const signature = req.headers["X-Signature-Ed25519"];
-        const timestamp = req.headers["X-Signature-Timestamp"];
+        const signature = req.headers["x-signature-ed25519"];
+        const timestamp = req.headers["x-signature-timestamp"];
 
 
         if (!body.type) {
@@ -46,7 +46,7 @@ export default async function handler(req, res) {
             case 1:
                 console.log("Received ping");
                 response = { type: 1 };
-                verify = false; // don't need to verify for ping?
+                // verify = false; // don't need to verify for ping?
                 break;
             default:
                 console.log({ body, type: body.type });
