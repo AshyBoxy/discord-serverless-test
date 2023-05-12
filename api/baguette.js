@@ -1,4 +1,4 @@
-import * as nacl from "tweetnacl";
+const nacl = require("tweetnacl");
 
 export default function handler(req, res) {
     if (req.method === 'POST') {
