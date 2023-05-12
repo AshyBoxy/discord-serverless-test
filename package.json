@@ -4,5 +4,8 @@
   "private": true,
   "devDependencies": {
     "@vercel/node": "^2.9.6"
+  },
+  "dependencies": {
+    "tweetnacl": "^1.0.3"
   }
 }
