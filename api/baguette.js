@@ -46,6 +46,7 @@ export default async function handler(req, res) {
             case 1:
                 response = { type: 1 };
                 verify = false; // don't need to verify for ping?
+                break;
             default:
                 console.log({ body, type: body.type });
         }
@@ -63,6 +64,7 @@ export default async function handler(req, res) {
             }
         }
 
+        console.log({ response });
         return res.json(response);
     } else {
         res.setHeader('Allow', 'POST');
