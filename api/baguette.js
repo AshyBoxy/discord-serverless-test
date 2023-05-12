@@ -1,6 +1,6 @@
-const nacl = require("tweetnacl");
+import * as nacl from "tweetnacl";
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
     if (req.method === 'POST') {
         const buf = await buffer(req);
         const rawBody = buf.toString('utf8');
