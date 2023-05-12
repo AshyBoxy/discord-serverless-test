@@ -1,5 +1,15 @@
 import nacl from "tweetnacl";
 
+const defaultMessageResponse = {
+    type: 4, // respond with message
+    data: {
+        content: "il s'agit d'une commande inconnue comment êtes-vous arrivé ici ?",
+        allowed_mentions: {
+            parse: []
+        }
+    }
+};
+
 /**
  *
  * @param {import("@vercel/node").VercelRequest} req
@@ -48,6 +58,16 @@ export default async function handler(req, res) {
                 response = { type: 1 };
                 // verify = false; // don't need to verify for ping?
                 break;
+            case 2: // application command
+                response = defaultMessageResponse;
+                switch (body.data.name) {
+                    case "baguette":
+                        response.data.content = "Je ne suis qu'une baguette de pain, que voulez-vous que je fasse ?";
+                        break;
+                    default:
+                        break;
+                }
+            // intentional fallthrough
             default:
                 console.log({ body, type: body.type });
         }
