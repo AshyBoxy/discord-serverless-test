@@ -47,7 +47,7 @@ export default async function handler(req, res) {
                 response = { type: 1 };
                 verify = false; // don't need to verify for ping?
             default:
-                console.log(req.body);
+                console.log({ body, type: body.type });
         }
 
         if (verify) {
