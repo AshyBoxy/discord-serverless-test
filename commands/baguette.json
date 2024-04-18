@@ -53,6 +53,15 @@
           "pl": "Włoski"
         },
         "value": "italian"
+      },
+      {
+        "name": "Polish",
+        "name_localizations": {
+          "fr": "Polonais",
+          "it": "Polacco",
+          "pl": "Polski"
+        },
+        "value": "polish"
       }
     ]
   }]
