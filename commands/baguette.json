@@ -1,0 +1,13 @@
+{
+  "default_member_permissions": null,
+  "type": 1,
+  "name": "baguette",
+  "description": "Baguette",
+  "contexts": [
+    0, 1, 2
+  ],
+  "integration_types": [
+    0, 1
+  ],
+  "nsfw": false
+}
