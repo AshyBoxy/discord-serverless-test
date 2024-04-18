@@ -11,7 +11,7 @@ const defaultMessageResponse = {
 };
 
 const baguetteResponses = {
-    "french": "Je ne suis qu'une baguette de pain, que voulez-vous que je fasse ?"
+    "french": "Je ne suis qu'une baguette de pain, que voulez-vous que je fasse ?",
     "italian": "Sono solo una baguette, cosa ti aspetti che faccia?"
 }
 
