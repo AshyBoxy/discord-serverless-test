@@ -9,5 +9,21 @@
   "integration_types": [
     0, 1
   ],
-  "nsfw": false
+  "nsfw": false,
+  "dm_permissions": null,
+  "options": [{
+    "type": 3,
+    "name": "language",
+    "description": "Default: French",
+    "choices": [
+      {
+        "name": "French",
+        "value": "french"
+      },
+      {
+        "name": "Italian",
+        "value": "italian"
+      }
+    ]
+  }]
 }

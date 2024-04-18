@@ -10,6 +10,11 @@ const defaultMessageResponse = {
     }
 };
 
+const baguetteResponses = {
+    "french": "Je ne suis qu'une baguette de pain, que voulez-vous que je fasse ?"
+    "italian": "Sono solo una baguette, cosa ti aspetti che faccia?"
+}
+
 /**
  *
  * @param {import("@vercel/node").VercelRequest} req
@@ -62,7 +67,7 @@ export default async function handler(req, res) {
                 response = defaultMessageResponse;
                 switch (body.data.name) {
                     case "baguette":
-                        response.data.content = "Je ne suis qu'une baguette de pain, que voulez-vous que je fasse ?";
+                        response.data.content = baguetteResponses[(body.data.options?.find((x) => x.name === "language") || {value:"french"}).value] || baguetteResponses.french;
                         break;
                     default:
                         break;
