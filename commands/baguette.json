@@ -2,6 +2,10 @@
   "default_member_permissions": null,
   "type": 1,
   "name": "baguette",
+  "name_localizations": {
+    "fr": "baguette",
+    "it": "baguette"
+  },
   "description": "Baguette",
   "contexts": [
     0, 1, 2
@@ -14,14 +18,30 @@
   "options": [{
     "type": 3,
     "name": "language",
+    "name_localizations": {
+      "fr": "langue",
+      "it": "lingua"
+    },
     "description": "Default: French",
+    "description_localizations": {
+      "fr": "Défaut : Français",
+      "it": "Predefinito: Francese"
+    }
     "choices": [
       {
         "name": "French",
+        "name_localizations": {
+          "fr": "Français",
+          "it": "Francese"
+        },
         "value": "french"
       },
       {
         "name": "Italian",
+        "name_localizations": {
+          "fr": "Italien",
+          "it": "Italiano"
+        },
         "value": "italian"
       }
     ]
