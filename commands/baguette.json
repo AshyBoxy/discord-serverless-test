@@ -5,13 +5,15 @@
   "name_localizations": {
     "fr": "baguette",
     "it": "baguette",
-    "pl": "bagietka"
+    "pl": "bagietka",
+    "no": "baguette"
   },
   "description": "Baguette",
   "description_localizations": {
     "fr": "Baguette",
     "it": "Baguette",
-    "pl": "Bagietka"
+    "pl": "Bagietka",
+    "no": "Baguette"
   },
   "contexts": [
     0, 1, 2
@@ -27,13 +29,15 @@
     "name_localizations": {
       "fr": "langue",
       "it": "lingua",
-      "pl": "język"
+      "pl": "język",
+      "no": "språk"
     },
     "description": "Default: French",
     "description_localizations": {
       "fr": "Défaut : Français",
       "it": "Predefinito: Francese",
-      "pl": "Domyślnie: Francuski"
+      "pl": "Domyślnie: Francuski",
+      "no": "Standard: Fransk"
     },
     "choices": [
       {
@@ -41,7 +45,8 @@
         "name_localizations": {
           "fr": "Français",
           "it": "Francese",
-          "pl": "Francuski"
+          "pl": "Francuski",
+          "no": "Fransk"
         },
         "value": "french"
       },
@@ -50,7 +55,8 @@
         "name_localizations": {
           "fr": "Italien",
           "it": "Italiano",
-          "pl": "Włoski"
+          "pl": "Włoski",
+          "no": "Italiensk"
         },
         "value": "italian"
       },
@@ -59,9 +65,20 @@
         "name_localizations": {
           "fr": "Polonais",
           "it": "Polacco",
-          "pl": "Polski"
+          "pl": "Polski",
+          "no": "Polsk"
         },
         "value": "polish"
+      },
+      {
+        "name": "Norwegian",
+        "name_localizations": {
+          "fr": "Norvégien",
+          "it": "Norvogese",
+          "pl": "Norweski",
+          "no": "Norsk"
+        },
+        "value": "norwegian"
       }
     ]
   }]
