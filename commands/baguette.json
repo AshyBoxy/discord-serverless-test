@@ -6,14 +6,16 @@
     "fr": "baguette",
     "it": "baguette",
     "pl": "bagietka",
-    "no": "baguette"
+    "no": "baguette",
+    "de": "baguette"
   },
   "description": "Baguette",
   "description_localizations": {
     "fr": "Baguette",
     "it": "Baguette",
     "pl": "Bagietka",
-    "no": "Baguette"
+    "no": "Baguette",
+    "de": "Baguette"
   },
   "contexts": [
     0, 1, 2
@@ -30,14 +32,16 @@
       "fr": "langue",
       "it": "lingua",
       "pl": "język",
-      "no": "språk"
+      "no": "språk",
+      "de": "sprache"
     },
     "description": "Default: French",
     "description_localizations": {
       "fr": "Défaut : Français",
       "it": "Predefinito: Francese",
       "pl": "Domyślnie: Francuski",
-      "no": "Standard: Fransk"
+      "no": "Standard: Fransk",
+      "de": "Standardeinstellung: Französische"
     },
     "choices": [
       {
@@ -46,7 +50,8 @@
           "fr": "Français",
           "it": "Francese",
           "pl": "Francuski",
-          "no": "Fransk"
+          "no": "Fransk",
+          "de": "Französische"
         },
         "value": "french"
       },
@@ -56,7 +61,8 @@
           "fr": "Italien",
           "it": "Italiano",
           "pl": "Włoski",
-          "no": "Italiensk"
+          "no": "Italiensk",
+          "de": "Italienische"
         },
         "value": "italian"
       },
@@ -66,7 +72,8 @@
           "fr": "Polonais",
           "it": "Polacco",
           "pl": "Polski",
-          "no": "Polsk"
+          "no": "Polsk",
+          "de": "Polnische"
         },
         "value": "polish"
       },
@@ -76,9 +83,21 @@
           "fr": "Norvégien",
           "it": "Norvogese",
           "pl": "Norweski",
-          "no": "Norsk"
+          "no": "Norsk",
+          "de": "Norwegische"
         },
         "value": "norwegian"
+      },
+      {
+        "name": "German",
+        "name_localizations": {
+          "fr": "Allemande",
+          "it": "Tedesca",
+          "pl": "Niemiecki",
+          "no": "Tysk",
+          "de": "Deutsche"
+        },
+        "value": "german"
       }
     ]
   }]
