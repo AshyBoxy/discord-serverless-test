@@ -41,7 +41,7 @@
       "it": "Predefinito: Francese",
       "pl": "Domyślnie: Francuski",
       "no": "Standard: Fransk",
-      "de": "Standardeinstellung: Französische"
+      "de": "Standardeinstellung: Französisch"
     },
     "choices": [
       {
@@ -51,7 +51,7 @@
           "it": "Francese",
           "pl": "Francuski",
           "no": "Fransk",
-          "de": "Französische"
+          "de": "Französisch"
         },
         "value": "french"
       },
@@ -62,7 +62,7 @@
           "it": "Italiano",
           "pl": "Włoski",
           "no": "Italiensk",
-          "de": "Italienische"
+          "de": "Italienisch"
         },
         "value": "italian"
       },
@@ -73,7 +73,7 @@
           "it": "Polacco",
           "pl": "Polski",
           "no": "Polsk",
-          "de": "Polnische"
+          "de": "Polnisch"
         },
         "value": "polish"
       },
@@ -84,7 +84,7 @@
           "it": "Norvogese",
           "pl": "Norweski",
           "no": "Norsk",
-          "de": "Norwegische"
+          "de": "Norwegisch"
         },
         "value": "norwegian"
       },
@@ -95,7 +95,7 @@
           "it": "Tedesca",
           "pl": "Niemiecki",
           "no": "Tysk",
-          "de": "Deutsche"
+          "de": "Deutsch"
         },
         "value": "german"
       }
